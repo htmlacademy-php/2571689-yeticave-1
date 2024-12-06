@@ -27,8 +27,7 @@ $user_name = 'Анна'; // укажите здесь ваше имя
         <a class="main-header__add-lot button" href="pages/add-lot.html">Добавить лот</a>
 
         <nav class="user-menu">
-
-        <?php if ($is_auth == 1): ?>
+     <?php if ($is_auth == 1): ?>
         <div class="user-menu__logged">
   <p>Анна</p>
   <a class="user-menu__bets" href="pages/my-bets.html">Мои ставки</a>
@@ -36,18 +35,17 @@ $user_name = 'Анна'; // укажите здесь ваше имя
 </div>
 <?php else: ?>
     <ul class="user-menu__list">
-  <li class="user-menu__item">
-    <a href="#">Регистрация</a>
+      <li class="user-menu__item">
+        <a href="#">Регистрация</a>
   </li>
   <li class="user-menu__item">
     <a href="#">Вход</a>
-  </li>
+</li>
 </ul>
     <?php endif; ?>
     </nav>
 </div>
 </header>
-
 <main class="container">
     <section class="promo">
         <h2 class="promo__title">Нужен стафф для катки?</h2>
