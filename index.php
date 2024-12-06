@@ -34,7 +34,7 @@ $user_name = 'Анна'; // укажите здесь ваше имя
   <a class="user-menu__bets" href="pages/my-bets.html">Мои ставки</a>
   <a class="user-menu__logout" href="#">Выход</a>
 </div>
-<?php elseif : ?>
+<?php elseif: ?>
     <ul class="user-menu__list">
   <li class="user-menu__item">
     <a href="#">Регистрация</a>
