@@ -1,7 +1,18 @@
 <?php
+const SIGN = '₽';
+function formatPrice(float $price): string
+{
+    if ($price < 1000) {
+        return $price . ' ' . SIGN;
+    }
+$price = floor($price);
+$price = number_format($price, 0, '.' ' ');
+return $price . ' ' . SIGN;
+}
+
 $is_auth = rand(0, 1);
 
-$user_name = 'Анна'; // укажите здесь ваше имя
+$userName = 'Анна'; // укажите здесь ваше имя
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -29,7 +40,7 @@ $user_name = 'Анна'; // укажите здесь ваше имя
         <nav class="user-menu">
      <?php if ($is_auth === 1): ?>
     <div class="user-menu__logged">
-  <p><?= $user_name; ?></p>
+  <p><?= $userName; ?></p>
   <a class="user-menu__bets" href="pages/my-bets.html">Мои ставки</a>
   <a class="user-menu__logout" href="#">Выход</a>
     </div>
