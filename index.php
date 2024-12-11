@@ -53,10 +53,10 @@ $user_name = 'Анна'; // укажите здесь ваше имя
         <p class="promo__text">На нашем интернет-аукционе ты найдёшь самое эксклюзивное сноубордическое и горнолыжное снаряжение.</p>
         <ul class="promo__list">
         <?php
-$lots = [
-   "Доски и лыжи", "Крепления", "Ботинки", "Одежда" "Инструменты", "Разное"
-        ];
 $categories = [
+   "Доски и лыжи", "Крепления", "Ботинки", "Одежда" "Инструменты", "Разное"
+              ];
+$lots = [
 [
 'name'=> '2014 Rossignol District Snowboard'
 'category' => 'Доски и лыжи'
@@ -115,7 +115,7 @@ $categories = [
                 </div>
                 <div class="lot__info">
                     <span class="lot__category"><? $lots['categories'] ?></span>
-                    <h3 class="lot__title"><a class="text-link" href="pages/lot.html"><? $things['name'] ?></a></h3>
+                    <h3 class="lot__title"><a class="text-link" href="pages/lot.html"><? $lots['name'] ?></a></h3>
                     <div class="lot__state">
                         <div class="lot__rate">
                             <span class="lot__amount"><? $lots['price'] ?></span>
