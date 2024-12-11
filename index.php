@@ -1,7 +1,7 @@
 <?php
 $is_auth = rand(0, 1);
 
-$userName = 'Анна'; // укажите здесь ваше имя
+$user_name = 'Анна'; // укажите здесь ваше имя
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -29,7 +29,7 @@ $userName = 'Анна'; // укажите здесь ваше имя
         <nav class="user-menu">
     <?php if ($is_auth === 1): ?>
     <div class="user-menu__logged">
-  <p><?= $userName; ?></p>
+  <p><?= $user_name; ?></p>
   <a class="user-menu__bets" href="pages/my-bets.html">Мои ставки</a>
   <a class="user-menu__logout" href="#">Выход</a>
     </div>
