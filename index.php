@@ -6,7 +6,7 @@ function formatPrice(float $price): string
         return $price . ' ' . SIGN;
     }
 $price = floor($price);
-$price = number_format($price, 0, '.' ' ');
+$price = number_format($price, 0, '.', ' ');
 return $price . ' ' . SIGN;
 }
 
