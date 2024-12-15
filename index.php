@@ -1,5 +1,5 @@
-require_once('templates\data.php')
-require_once('function\formatPrice.php')
+require_once('templates\data.php');
+require_once('function\formatPrice.php');
 
 /**
  * Подключает шаблон и передает туда данные
